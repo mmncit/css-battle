@@ -12,5 +12,5 @@
 
 </style>
 
-<p>Hello, world!</p>
+<p>Hello, CSS!</p>
 <Nested />

@@ -2,8 +2,12 @@
   import router from "page";
   import Home from "./pages/Home.svelte";
   import HelloWorld from "./pages/hello-world/Page.svelte";
+  import Piano from "./pages/piano/Page.svelte";
 
-  const examples = [{ title: "hello-world", component: HelloWorld }];
+  const examples = [
+    { title: "hello-world", component: HelloWorld },
+    { title: "piano", component: Piano },
+  ];
 
   let page;
   router("/", () => (page = Home));
