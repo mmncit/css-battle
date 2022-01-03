@@ -3,10 +3,12 @@
   import Home from "./pages/Home.svelte";
   import HelloWorld from "./pages/hello-world/Page.svelte";
   import Piano from "./pages/piano/Page.svelte";
+  import MissingSlice from "./pages/missing-slice/Page.svelte";
 
   const examples = [
     { title: "hello-world", component: HelloWorld },
     { title: "piano", component: Piano },
+    { title: "missing-slice", component: MissingSlice },
   ];
 
   let page;
