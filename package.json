@@ -33,13 +33,16 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
+  "homepage": "https://mmncit.github.io/css-battle/",
   "scripts": {
     "lint": "yarn lint:types && yarn lint:ci",
     "lint:types": "yarn tsc --noEmit -p .",
     "lint:ci": "eslint . --ext .tsx,.ts",
     "build": "webpack --mode=production",
     "dev": "webpack --watch --mode=development",
-    "start": "webpack-dev-server --config webpack.config.js --history-api-fallback --content-base public"
+    "start": "webpack-dev-server --config webpack.config.js --history-api-fallback --content-base public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "svelte": "^3.38.3",
