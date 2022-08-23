@@ -40,8 +40,6 @@ jobs:
 
       - run: |
           yarn build
-          version=$(node -pe 'JSON.parse(process.argv[1]).version' "$(cat package.json)")
-          echo "VERSION=$version" >> $GITHUB_ENV
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
