@@ -18,11 +18,12 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install --frozen-lockfile
-          yarn deploy
+          yarn build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # The branch the action should deploy to.
           git-config-name: mmncit
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           folder: public # The folder the action should deploy.
