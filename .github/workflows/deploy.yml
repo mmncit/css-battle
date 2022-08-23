@@ -21,6 +21,7 @@ jobs:
           git-config-email: mmncit@gmail.com
         run: |
           yarn install --frozen-lockfile
+          git config --global credential.helper wincred
           yarn deploy
 
       - name: Deploy 🚀
