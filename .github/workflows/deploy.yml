@@ -18,7 +18,6 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install --frozen-lockfile
-          git config --global credential.helper wincred
           yarn deploy
 
       - name: Deploy 🚀
