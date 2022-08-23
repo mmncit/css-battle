@@ -16,9 +16,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install and Build 🔧
-        with:
-          git-config-name: mmncit
-          git-config-email: mmncit@gmail.com
         run: |
           yarn install --frozen-lockfile
           git config --global credential.helper wincred
