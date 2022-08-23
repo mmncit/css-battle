@@ -39,6 +39,7 @@ jobs:
           key: ${{ github.sha }}
 
       - run: |
+          cd css-battle/css-battle
           yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
