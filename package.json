@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "css battle solutions",
   "author": "mmncit",
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/mmncit/css-battle"
