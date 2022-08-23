@@ -42,8 +42,8 @@
     "build": "webpack --mode=production",
     "dev": "webpack --watch --mode=development",
     "start": "webpack-dev-server --config webpack.config.js --history-api-fallback --content-base public",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d public/build"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages"
   },
   "dependencies": {
     "svelte": "^3.38.3",
