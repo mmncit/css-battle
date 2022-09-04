@@ -2,12 +2,6 @@
 
 css-battle solutions
 
-## Install dependencies
-
-```bash
-yarn install
-```
-
 ## Running web app
 
 ```bash
